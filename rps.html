@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="rps.js"></script>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        header{
+            padding: 0px;
+            /* position: relative; */
+            background-image: url(images.jpg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: cover;
+            height: 30vh;
+            width: 100%; 
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(245, 250, 159);
+            /* background-image: url(downloadrps.jpg); */
+            background-repeat: no-repeat;
+        
+            
+        }
+       
+        #userTable11{
+            background-color: rgb(5, 90, 33);
+            color: aliceblue;
+        }
+        #computerTable11{
+            background-color: rgb(5, 90, 33);
+            color: aliceblue;
+        }
+        
+        button{
+            background-color: rgb(0, 255, 106);
+        
+        }
+        table{
+            padding: 2px;
+            border-color: rgb(5, 90, 33);
+        }
+    #heading{
+        font-size: xx-large;
+    }
+    /* .abt-rps{
+        transition: ease 30s;
+        animation: normal 30s ease;
+    } */
+    .container{
+        width: 45%;
+        /* background-color: #0f0; */
+        text-align: center;
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-rows: 50px;
+
+    }
+    .box1, .box2{
+        display: inline;
+        height: 25px;
+        
+    }
+        
+    </style>
+</head>
+<body>
+        <header>
+                <h1 id="heading">
+                    Rock Paper Scissors
+                </h1>
+        </header>
+
+   
+    <h4>
+        A classic game - Rock, Paper, Scissors! Choose one of the three choices - and see if you can beat the computer. Will you win? The chance is random
+    </h4>
+
+    <span>
+        <div class="container box1">
+            <h1>User</h1>
+        </div>
+        <div class="container box2">
+            <h1>Computer</h1>
+        </div>
+
+    </span>
+   
+    <center>
+        <table border="0">
+                <tr>
+                    <td id="userTable11"><h1>User</h1></td> <br>
+                    <td id="computerTable11"><h1>Computer</h1></td>
+                </tr> 
+           
+                <tr>
+                    <td><p id="userScore">0</p></td>
+                    <td><p id="computerScore">0</p></td>
+                </tr>
+           
+        </table>
+        <br><br>
+        <button onclick="rock()">Rock</button>
+        <button onclick="paper()">Paper</button>
+        <button onclick="scissors()">Scissors</button>
+        <button onclick="restart()">Restart</button>
+        <br><br>
+        <div id="disp">Display</div>
+    
+    </center>
+   
+</body>
+</html>
